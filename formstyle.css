@@ -1,23 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
+
+html {
+    font-size: 62.5%;
 }
 
 body {
-    background: #cfcfcf;
-}
-
-form {
-    background-color: #327D9D;
-    border: 2px solid black;
-    display: block;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    background: lightblue;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
     align-items: center;
-    font-size: 25px;
+    justify-content: center;
 }
 
-#form {
-    color: white;
-    text-align: center;
-    display: inline;
+h2 {
+    background: rgba(173, 216, 230, 0.7);
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    cursor: default;
 }
+form,
+input,
+textarea,
+button {
+    font-family: inherit;
+    font-size: initial;
+}
+
+.form-group label {
+    display: block;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    height: 4.6rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit {
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: rgba(173, 216, 230, 0.7);
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+i {
+    margin-right: 0.5rem;
+}
+

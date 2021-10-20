@@ -8,24 +8,29 @@
 <body>
 <h1>Le Formulaires</h1>
 
-    <div id="form">
-        <form action="#" method="post">
+<div class="wrapper">
 
-            <label for="name">Nom & prénom</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom et prénom">
+    <h2>Contact</h2>
 
-            <label for="emailAddress">Email</label>
-            <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+    <form action="" method="POST">
+        <div class="form-group">
+            <label for="name">Prénom Nom</label>
+            <input type="text" name="Name" id="name" placeholder="Prénom Nom" required minlength="3" maxlength="25" />
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" placeholder="email" required />
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="Message" id="message" rows="5" placeholder="Votre Message"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Envoyer</button>
+        </div>
+    </form>
+</div>
 
-            <label for="object">Objet</label>
-            <input type="text" id="object" name="object">
-
-            <label for="mess">Message</label>
-            <textarea id="mess" name="mess" placeholder="Votre Message"></textarea>
-
-            <input type="submit" value="Envoyer">
-        </form>
-    </div>
-
+<script src="https://kit.fontawesome.com/018d8912e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
